@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the  Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>Munir Hiabu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+<style>
+a:link {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+
+<style>
+.filterDiv {
+
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  outline-color:  #e85338;
+}
+</style>
+
+
+
+<style>
+.filterDiv2 {
+
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 4px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn2 {
+  border: none;
+  outline: none;
+  padding: 1px 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  outline-color:  #e85338;
+}
+</style>
+
+<style>
+.center {
+  text-align: center
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+    <div class="container">
+		<ul class="nav navbar-nav mr-auto">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./publications.html">Papers</a></li> 
+     
+ 		</ul>
+	  </div>
+	  </nav>
+	
+
+  
+<!-- Page Content -->
+  <div class="container">
+  <div class="row row-grid">
+
+          
+    
+      <!-- Left panel-->
+        <div class="col-md-4" style="height: 100vh;font-family:'Lato'">    
+
+      
+                      <div id="myBtnContainer"> 
+                       <button class="btn" onclick="filterSelection('StructuredModels')"> Structured Models </button><br>
+                      <button class="btn2" onclick="filterSelection('Pensions')"> Pensions</button>
+                      </div>
+                      <br><br>
+                      
+                    <div id="myBtnContainer"> Applications: <br>
+                     <button class="btn2" onclick="filterSelection2('Reserving')"> Reserving </button><br>
+                    <button class="btn2" onclick="filterSelection2('Insampleforecasting')"> In-sample forecasting</button>
+                    </div>
+                <br>
+         </div>
+         
+        <!-- Right Panel-->
+            
+        #<div class="col-md-7" style="height: 100vh;font-family:'Lato'">    
+                    <div class="filterDiv StructuredModels">
+                          <div class="center"><h2 id="research">Structured Models</h2></div> <br> <br>
+                           Non-parametric models have the advantage of working on minimal assumptions and are thus more 
+                            robust to misspecification than                  
+                            parametric approaches. This benefit comes with the cost of generally slower convergence rates. 
+                            In particular in higher dimensions,             the optimal achievable rate decreases exponentially. This is 
+                            also known 
+                            as <a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality" target=_blank>curse of dimensionality</a>.
+                           <br>
+                           <br>
+                            A solution to that drawback is to assume a separable structure on the quantity of interest. 
+                             The most famous example in the statistics literature 
+                             is the <a href="https://en.wikipedia.org/wiki/Additive_model" 
+                             targer=_blank>additive model in regression</a>.
+                            <br>
+                             <br>
+                            Despite the curse of dimensionality,
+                             other traditional arguments for structured models are interpretability and visualization.
+                           <br>
+                           <br>
+                   </div>
+                 
+                 
+                 <div class="filterDiv2 Reserving">
+                                <img class="img-responsive" src="triangle.jpg"  height="230" width="230", align="top">
+
+                   Reserving is a short name for 
+                   the process behind accounting for outstanding liabilities in non-life insurance. These are composed  
+                   of the future costs for reported claims that have not been settled yet, but also of 
+                   incurred claims that have not yet been reported.
+                    <br><br>
+
+                   One talks about stochastic reserving, if this includes the assessment 
+                    of uncertainty and variability in the liabilities forecast.<br><br>
+
+                   Up to this date, the majority of reserving literature concentrates on stochastic 
+                    versions of the classical chain ladder method and extensions thereof.<br><br>
+      
+                   What is often missing in those literature is the modelling of the data generating process, 
+                   that is, a full statistical model explaining the data at hand and the underlying 
+                   assumptions based on the claims processing environment.<br><br>
+
+                    In so called micro-level reserving or granular 
+                    reserving this gap is usually closed, but most often 
+                   on the cost of more complicated models (which are certainly more expensive to 
+                 calibrate but do not necessarily have a better prediction).<br><br>
+
+                 I am working on granular reserving methods starting with the data generating process
+                but within the chain ladder framework.<br><br>
+              
+             </div>
+      
+             <div class="filterDiv2 Pensions">
+                                <img class="img-responsive" src="triangle.jpg" alt="Avatar" height="230" width="230", align='top'>
+
+                   Reserving is a short name for 
+                   the process behind accounting for outstanding liabilities in non-life insurance. These are composed  
+                   of the future costs for reported claims that have not been settled yet, but also of 
+                   incurred claims that have not yet been reported.
+                    <br><br>
+
+                   One talks about stochastic reserving, if this includes the assessment 
+                    of uncertainty and variability in the liabilities forecast.<br><br>
+
+                   Up to this date, the majority of reserving literature concentrates on stochastic 
+                    versions of the classical chain ladder method and extensions thereof.<br><br>
+      
+                   What is often missing in those literature is the modelling of the data generating process, 
+                   that is, a full statistical model explaining the data at hand and the underlying 
+                   assumptions based on the claims processing environment.<br><br>
+
+                    In so called micro-level reserving or granular 
+                    reserving this gap is usually closed, but most often 
+                   on the cost of more complicated models (which are certainly more expensive to 
+                 calibrate but do not necessarily have a better prediction).<br><br>
+
+                 I am working on granular reserving methods starting with the data generating process
+                but within the chain ladder framework.<br><br>
+              
+             </div>
+      
+      
+
+             <div class="filterDiv2 Insampleforecasting">
+                                <img class="img-responsive" src="triangle.jpg" alt="Avatar" height="230" width="230", align='top'>
+
+                   Reserving is a short name for 
+                   the process behind accounting for outstanding liabilities in non-life insurance. These are composed  
+                   of the future costs for reported claims that have not been settled yet, but also of 
+                   incurred claims that have not yet been reported.
+                    <br><br>
+
+                   One talks about stochastic reserving, if this includes the assessment 
+                    of uncertainty and variability in the liabilities forecast.<br><br>
+
+                   Up to this date, the majority of reserving literature concentrates on stochastic 
+                    versions of the classical chain ladder method and extensions thereof.<br><br>
+      
+                   What is often missing in those literature is the modelling of the data generating process, 
+                   that is, a full statistical model explaining the data at hand and the underlying 
+                   assumptions based on the claims processing environment.<br><br>
+
+                    In so called micro-level reserving or granular 
+                    reserving this gap is usually closed, but most often 
+                   on the cost of more complicated models (which are certainly more expensive to 
+                 calibrate but do not necessarily have a better prediction).<br><br>
+
+                 I am working on granular reserving methods starting with the data generating process
+                but within the chain ladder framework.<br><br>
+              
+          </div>
+
+    
+</div>
+</div>
+
+</body>
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection2(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv2");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer2");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+</html>

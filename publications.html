@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <title>Munir Hiabu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+
+<style>
+a:link {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+
+<style>
+.filterDiv {
+
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  outline-color:  #e85338;
+}
+</style>
+
+
+
+<style>
+.filterDiv2 {
+
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 4px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn2 {
+  border: none;
+  outline: none;
+  padding: 1px 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  outline-color:  #e85338;
+}
+</style>
+
+<style>
+.center {
+  text-align: center
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+    <div class="container">
+		<ul class="nav navbar-nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./research.html">Research</a></li>
+              <li><a href="./publications.html">Papers</a></li>
+              <li><a href="./teaching.html">Teaching</a></li>  
+ 		</ul>
+	  </div>
+	  </nav>
+	
+
+  
+<!-- Page Content -->
+  <div class="container">
+  <div class="row row-grid">
+
+          
+
+        
+        <!-- Publications -->
+         <div class="col-md-10" style="font-family:'Lato'">    
+                <h2 id="publications">Papers</h2>
+            
+
+                <div id="myBtnContainer">
+                  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                  <button class="btn" onclick="filterSelection('Statistics')"> Statistical Theory & Methodology</button>
+                  <button class="btn" onclick="filterSelection('ActuarialScience')"> Actuarial Science</button>
+                  <button class="btn" onclick="filterSelection('Pensions')"> Pensions</button>
+                </div>
+                <br>
+
+   
+              <b><p class="w3-theme-l4" style="font-family:Source Code Pro;font-size:15px; font-weight: 100">  Work in progress </p></b>
+    
+    
+            <ol>
+              <div class="filterDiv Statistics"> <li> Bischofberger S, Hiabu M, Mammen E. and Nielsen JP:  Smooth backfitting  additive hazards               </li></div>
+ 
+             <div class="filterDiv Statistics">   <li>Hiabu M: Component-wise local linear projection 
+             of survival data under a multiplicative hazard structure</li></div>
+            
+             <div class="filterDiv Statistics">   <li> Edelman D, Hiabu M: Nonparametric estimation of a proportional 
+             hazard function</li></div>
+            
+            <div class="filterDiv Statistics">   <li> Hiabu M, Mammen E, Nielsen JP: Generalized structured hazard model </li></div>
+            
+                  <div class="filterDiv Statistics"> 
+      <li class="paper">
+              Hiabu M, Mammen E, Meyer J: Random Planted Forest: a directly interpretable tree ensemble
+              </li></div>
+           
+            
+          </ol>
+
+          
+          <b><p class="w3-theme-l4" style="font-family:Source Code Pro;font-size:15px; font-weight: 100" > Papers under review or revision </p></b>
+          
+          <ol>
+         </ol>
+
+        <b><p class="w3-theme-l4" style="font-family:Source Code Pro;font-size:15px; font-weight: 100"> Peer-reviewed journal articles                 </p></b>
+ 
+        <ol>
+               <div class="filterDiv Statistics"> <li class="paper">
+            Hiabu M, Nielsen, JP and Scheike, T (2020+):  Non-Smooth Backfitting for Excess Risk Additive  
+            Regression Model for Survival.
+            <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "</span>Biometrika</span>
+            <a href="https://arxiv.org/abs/1904.01202" target=_blank>[arxiv link]</a> 
+            <a href="https://doi.org/10.1093/biomet/asaa058" target=_blank>[doi]</a> 
+            <a href="https://github.com/MHiabu/Two_Timescale_Aalen" target=_blank>[github]</a> 
+            </li></div>
+            
+            
+          <div class="filterDiv Statistics"> <li class="paper">
+              Hiabu M, Mammen E, Martinez-Miranda MD and Nielsen JP (2020+): Smooth backfitting of proportional hazards with 
+              multiplicative components.
+              <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "</span>Journal of the American Statistical Association (Theory&Methods)</span>
+              <a href="https://arxiv.org/abs/1707.04622" target=_blank>[arxiv link]</a> 
+              <a href="    https://doi.org/10.1080/01621459.2020.1753520" target=_blank>[doi]</a> 
+              <a href="https://github.com/MHiabu/PropHazLC/" target=_blank>[github] </a>
+              </li></div>
+              
+              
+          <div class="filterDiv Pensions ActuarialScience"> <li class="paper">
+             Gerrard R, Hiabu M, Nielsen, JP and Vodicka, P (2020+) :  Long-term real dynamic investment planning.
+            <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d ; underline">Insurance: Mathematics and Economics</span>
+            <a href="https://doi.org/10.1016/j.insmatheco.2020.03.002" target=_blank>[doi]</a>    
+             </li></div>
+            
+            
+            
+          <div class="filterDiv ActuarialScience"><li class="paper">
+          Bischofberger S, Hiabu M, and Isakson A (2019+): Continuous chain-ladder with paid data.  
+          <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d ">Scandinavian Actuarial Journal </span>  
+          <a href="https://doi.org/10.1080/03461238.2019.1694973" target=_blank>[doi]</a>    
+          <a href="https://arxiv.org/abs/1904.01199" target=_blank>[arxiv link]</a> 
+          </li></div>
+  
+         <div class="filterDiv Statistics"><li class="paper">
+         Bischofberger S, Hiabu M, Mammen E. and Nielsen JP (2019): A comparison of in-sample forecasting methods. 
+          <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d ">Computational Statistics and Data Analysis </span>, 
+        137(2019) p. 133-154  
+        <a href="https://doi.org/10.1016/j.csda.2019.02.009" target=_blank>[doi]</a>    
+        </li></div>
+    
+        <div class="filterDiv Actuarial Science Pensions"><li class="paper">
+        Gerrard R, Hiabu M, Kyriakou I and Nielsen JP (2019): Communication and personal selection of
+        pension saver’s financial risk.  <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d ">
+        European Journal of Operational Research </span>,  274(3) p. 1102–1111 
+        <a href="https://doi.org/10.1016/j.ejor.2018.10.038" target=_blank>[doi]</a>    
+        <a href="https://drive.google.com/open?id=11SlHopz6qEbDDQMvp2ksQgvfDG5y88YQ" target=_blank>[accepted version]</a> 
+        </li></div>
+  
+         <div class="filterDiv Pensions ActuarialScience"><li class="paper">
+         Gerrard R, Hiabu M, Kyriakou I and Nielsen, JP (2018):  Self selection and risk sharing in a modern world of life long annuities. 
+         <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "> British Actuarial Journal </span>
+          <a href="https://drive.google.com/open?id=1_xtxFvS5Hm8STCsuf0tZaGhwoKcE2wM5" target=_blank>[accepted version]</a>  
+          <a href="https://doi.org/10.1017/S135732171800020X" target=_blank>[discussion]</a>    
+          </li></div>
+  
+         <div class="filterDiv ActuarialScience"> <li class="paper">
+         Hiabu M (2017): On the relationship between classical chain ladder and granular reserving.
+          <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d ">Scandinavian Actuarial Journal </span>, 2017(8) p. 708-729  
+         <a href="https://doi.org/10.1080/03461238.2016.1240709" target=_blank>[doi]</a>    
+         <a href="https://drive.google.com/open?id=1kJWyuet6fY_tzBQA59LgVeesM0G43_C3" target=_blank>[accepted version]</a> 
+         </li></div>
+  
+          <div class="filterDiv Statistics"><li class="paper">
+          Hiabu M, Mammen E, Martinez-Miranda MD and Nielsen JP (2016) : In-sample forecasting of local linear survival densities. 
+          <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "> Biometrika </span>, 103(4) p. 843–859 
+          <a href="https://doi.org/10.1093/biomet/asw038" target=_blank>[accepted version]</a>  
+          <a href="https://drive.google.com/open?id=1mwO-4xbuHikbu5OqiunsD21g3kTtcPdV" target=_blank>[discussion]</a>
+         <a href="https://drive.google.com/open?id=1tIfRQga1S8xdOtXpJDf-ixOMS_a3sooZ" target=_blank>[supplementary material]</a>  
+          </li></div>
+    
+         <div class="filterDiv ActuarialScience"><li class="paper">
+         Hiabu M, Margraf C, Martinez-Miranda MD and Nielsen, JP (2016): The Link Between Classical Reserving
+         and Granular Reserving Through Double Chain Ladder and its Extensions.  
+         <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "> British Actuarial Journal </span>, 21(1) p. 97-116 
+         <a href="https://doi.org/10.1017/S1357321715000288" target=_blank>[doi]</a>    
+         <a href="https://drive.google.com/open?id=1pfxvAaw9uMriHKEi3A4gQv7lcUn_Y4eT" target=_blank>[accepted version]</a> 
+         </li></div>
+  
+         <div class="filterDiv Actuarial Science"><li class="paper">
+         Hiabu M, Margraf C, Martinez-Miranda MD and Nielsen, JP (2016) : Cash flow generalisations of non-life 
+         insurance expert systems estimating outstanding liabilities. 
+         <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "> Expert Systems With Applications </span>, 45(1) p. 400-409 
+         <a href="https://doi.org/10.1016/j.eswa.2015.09.021" target=_blank>[doi]</a>    
+         <a href="https://drive.google.com/open?id=1A5KS0ILrbsiZ363fhwHtEH8urBjbjTNk" target=_blank>[accepted version]</a> 
+         </li></div>
+    
+          <div class="filterDiv Statistics"><li class="paper">
+          Hiabu M, Martinez-Miranda MD, Nielsen JP, Spreeuw J, Tanggaard C and Villegas A  (2015) : Global          Polynomial Kernel Hazard Estimation.            <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d ">Revista Colombiana de Estadístical </span>, 38(2) p. 399     -411 
+          <a href="http://dx.doi.org/10.15446/rce.v38n2.51668" target=_blank>[doi]</a>    
+           <a href="https://drive.google.com/open?id=1y60STpV5lPNq9uOjZpKw5R7Fa4P64C1Z" target=_blank>[accepted version]</a>
+          </li></div>
+  
+           <div class="filterDiv ActuarialScience"><li class="paper">
+           Agbeko TK, Hiabu M, Martinez-Miranda MD, Nielsen JP, and Verrall RJ (2014): Validating the Double      
+           Chain Ladder Stochastic Claim Reserving Model.  <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "> Variance </span>, 8(2) 
+           p.138-160
+           <a href="http://www.variancejournal.org/issues/?fa=article&abstrID=7127" target=_blank>[published version]</a>    
+           </li></div>
+  
+           </ol>
+
+
+
+        </div>
+
+        
+
+     
+    
+    
+</div>
+</div>
+
+</body>
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection2(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv2");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer2");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+</html>

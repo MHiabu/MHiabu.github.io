@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <title>Munir Hiabu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+
+<style>
+a:link {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #e85338;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+
+<style>
+.filterDiv {
+
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  outline-color:  #e85338;
+}
+</style>
+
+
+
+<style>
+.filterDiv2 {
+
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 4px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn2 {
+  border: none;
+  outline: none;
+  padding: 1px 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+  outline-color:  #e85338;
+}
+</style>
+
+<style>
+.center {
+  text-align: center
+}
+</style>
+<style>
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+    <div class="container">
+		<ul class="nav navbar-nav">
+                      <li><a href="./index.html">Home</a></li>
+              <li><a href="./research.html">Research</a></li>
+              <li><a href="./publications.html">Papers</a></li>
+              <li><a href="./teaching.html">Teaching</a></li> 
+ 		</ul>
+	  </div>
+	  </nav>
+	
+
+  
+<!-- Page Content -->
+  <div class="container">
+  <div class="row row-grid">
+
+          
+        <!-- Research -->
+ <div class="col-md-4">
+<div id="toc_container">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+  <li><a href="#1">1 Background: Course of Dimensionality</a>
+</li>
+<li><a href="#2">2 Research: Structured models</a></li>
+<ul class="toc_list">
+  <li><a href="#21">2.1 Nonparametric proportional hazazrd model</a>
+    <li><a href="#22">2.2  Multiple time-scales influencing risk factors </a>
+</li>
+</ul>
+</ul>
+</div>
+</div>
+
+
+ <div class="col-md-8">
+      
+               <h3 id="1">1 Background: Curse of dimensionality</h3>
+                    <p style="font-size:12px">
+
+ Click <a href="http://www.maths.usyd.edu.au/u/munir/curse_of_dimensionality.html">  here  </a> to view an interactive example of how the number of ob- servations in a neighbourhood decreases when going from one to two to three dimensions.
+ </p>
+ Nonparametric models suffer from the curse of dimensionality in high dimensional data spaces, i.e., exponentially deteriorating estima- tion performance in the number of variables due to the growing distance between data points. The following hyperlink leads to an interactive example of how the number of observations in a neighbourhood decreases when going from one to two to three dimensions. Dimensionality reduction techniques (e.g. PCA or versions of neural nets) tackle this problem by assuming that the intrinsic dimension of the data is of lower dimensionality, i.e, most of the signal of the data can be reconstructed by transformation of a small subset of the initial variables. However, in many applications, interpretation of the initial variables is of importance and interpretation is not directly possible after transformation of the variables. Feature selection approaches (e.g. LASSO or random forest) assume that only a subset of the variables is relevant without transforming the variables. However, even without transformation of the variables, interpretation is still difficult because it is hard to visualise a multivariate function of more than two variables.
+ 
+                <h3 id="2">2 Reserach: Structured models</h3>
+
+An alternative to the approaches above is to introduce structure that stabilises the system and thereby possibly enhances predictive performance. Introducing structure has the additional advantage that it allows to visualise, interpret, extrapolate and forecast the properties of the underlying data. My research agenda is to exploit the idea of structured models to provide both enhanced predictions and/or quantifications of risk as well as interpretation and visualisation of predictors and risk factors.
+My fundamental research in mathematical statistics and statistical machine learning is motivated and driven by high impact applications. Many of those applications are in the framework of survival analysis such that within the general framework of structured models and nonparametric statistics, I often work in survival analysis and counting process theory settings that allow to accommodate missing data arising through truncation and censoring.
+    Below are two selected recent examples.
+  <br><br>   
+     <h4 id="21"> 2.1 Nonparametric proportional hazard model</h4>
+     <p style="font-size:12px">
+          Hiabu M, Mammen E, Martinez-Miranda MD and Nielsen JP (2020+): Smooth backfitting of proportional hazards with 
+              multiplicative components.
+              <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "</span>Journal of the American Statistical Association (Theory&Methods)</span>
+              <a href="https://arxiv.org/abs/1707.04622" target=_blank>[arxiv link]</a> 
+              <a href="    https://doi.org/10.1080/01621459.2020.1753520" target=_blank>[doi]</a> 
+              <a href="https://github.com/MHiabu/PropHazLC/" target=_blank>[github] </a>
+     </p>
+    Smooth backfitting has proven to have a number of theoretical and practical advantages in structured regression. By projecting the data down onto the structured space of interest smooth backfitting provides a direct link between data and estimator. This article introduces the ideas of smooth backfitting to survival analysis in a proportional hazard model, where we assume an underlying conditional hazard with multiplicative components. We develop asymptotic theory for the estimator. In a comprehensive simulation study, we show that our smooth backfitting estimator successfully circumvents the curse of dimensionality and outperforms existing estimators. This is especially the case in difficult situations like high number of covariates and/or high correlation between the covariates, where other estimators tend to break down. We use the smooth backfitter in a practical application where we extend recent advances of in-sample forecasting methodology by allowing more information to be incorporated, while still obeying the structured requirements of in-sample forecasting. <br>
+    <img src="sim_d10.jpg" alt="SBF" width="500" height="200">
+         <p style="font-size:12px">
+    Simulation study with 200 simualtions: Our pro- posed estimator (SBF) outperformes an alternative estimator. The left panel is under- smoothed (b_k = 0.2). The right panel shows that additional smoothing (b_k = 0.3) makes the Lin He Huang (2016) estimator too flat.
+</p>
+         <h4 id="22"> 2.2 Multiple time-scales influencing risk factors </h4>
+                <p style="font-size:12px">
+              Hiabu M, Nielsen, JP and Scheike, T (2020+):  Non-Smooth Backfitting for Excess Risk Additive  
+            Regression Model for Survival.
+            <span style="font-weight:900;-webkit-font-smoothing: antialiased;color:#4d4d4d "</span>Biometrika</span>
+            <a href="https://arxiv.org/abs/1904.01202" target=_blank>[arxiv link]</a> 
+            <a href="https://doi.org/10.1093/biomet/asaa058" target=_blank>[doi]</a> 
+            <a href="https://github.com/MHiabu/Two_Timescale_Aalen" target=_blank>[github]</a> 
+    </p>     
+We consider an extension of Aalen’s additive regression model allowing covariates to have effects that vary on two different time-scales. The two time-scales considered are equal up to a constant that varies for each individual, such as follow-up time and age in medical studies or calendar time and age in longitudinal studies. The model was introduced in Scheike (2001) where it was solved via smoothing techniques. We present a new backfitting algorithm estimating the structured model without having to use smoothing. Estimators of the cumulative regression functions on the two time-scales are suggested by solving local estimating equations jointly on the two time-scales. We provide large sample properties and simultaneous confidence bands. The model is applied to data on myocardial infarction providing a separation of the two effects stemming from time since diagnosis and age.<br>
+        <img src="full_age.jpg"  width="500" height="150">
+        <img src="full_duration.jpg"  width="500" height="150">
+
+         <p style="font-size:12px">
+ Data application: Diabetes has no interaction with duration (time since heart attack (myocardial infarction)), but interaction with patients’s age (the older the patient the greater the effect of diabetes on mortality). The two other risk factors (congestive heart failure (chf) & ventricular fibrillation (vf)) are mainly important in the first 100 days after a heart attack.
+</p>
+    
+    
+    
+    
+    
+   </div> 
+   
+   
+   
+   
+</div>
+</div>
+
+</body>
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection2(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv2");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer2");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+</html>
