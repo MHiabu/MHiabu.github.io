@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath,amssymb,bm,mathtools,graphicx}
+\usepackage{authblk}
+
+
+\renewcommand\title[1]{\def\thetitle{#1}}
+
+
+
+\NewCommandCopy{\authblkauthor}{\author}
+\ExplSyntaxOn
+\seq_new:N \g_bamberg_authors_seq
+\RenewDocumentCommand{\author}{om}
+ {
+  \seq_gput_right:Nn \g_bamberg_authors_seq { $\text{#2}^{ #1}$ }
+  \IfNoValueTF { #1 } { \authblkauthor{#2} } { \authblkauthor[#1]{#2} }
+ }
+\NewExpandableDocumentCommand{\ABgetauthor}{m}
+ {
+  \seq_item:Nn \g_bamberg_authors_seq { #1 }
+ }
+\ExplSyntaxOff
+
+
+\renewenvironment{abstract}{\begin{trivlist}\item}{\end{trivlist}}
+\makeatletter
+\renewcommand\maketitle{
+  \section*{\thetitle}
+Presenter: \textbf{\ABgetauthor{1}}\\
+Authors: \AB@authlist
+ \vspace{0.2cm}
+ 
+ \noindent
+ \AB@affillist
+}
+
+
+
+\begin{document}
+
+\input myname  % change to file name of abstract
+
+
+\end{document}
+
