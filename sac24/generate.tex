@@ -2,10 +2,7 @@
 \usepackage{amsmath,amssymb,bm,mathtools,graphicx}
 \usepackage{authblk}
 
-
 \renewcommand\title[1]{\def\thetitle{#1}}
-
-
 
 \NewCommandCopy{\authblkauthor}{\author}
 \ExplSyntaxOn
@@ -21,7 +18,6 @@
  }
 \ExplSyntaxOff
 
-
 \renewenvironment{abstract}{\begin{trivlist}\item}{\end{trivlist}}
 \makeatletter
 \renewcommand\maketitle{
@@ -34,12 +30,9 @@ Authors: \AB@authlist
  \AB@affillist
 }
 
-
-
 \begin{document}
 
-\input myname  % change to file name of abstract
-
+\input myname % Change to the file name of the abstract.
 
 \end{document}
 
